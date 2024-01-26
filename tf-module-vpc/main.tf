@@ -8,7 +8,7 @@ locals {
 
 module "vpc-aws" {
   # source  = "terraform-aws-modules/vpc/aws"
-  source = "https://github.com/cyrej17/aws-infra.git/tf-code-aws/prod/us-east-1/vpc"
+  source = "git::https://github.com/cyrej17/aws-infra.git/?ref=v1.0.0"
   version = "5.5.0"
 
   for_each = local.vpc_configs_map
