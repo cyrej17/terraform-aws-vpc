@@ -7,9 +7,8 @@ locals {
 
 
 module "vpc-aws" {
-  # source  = "terraform-aws-modules/vpc/aws"
-  source  = "app.terraform.io/cyrej_yt_ops/vpc/aws"
-  version = "1.0.0"
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "5.5.0"
 
   for_each = local.vpc_configs_map
 
